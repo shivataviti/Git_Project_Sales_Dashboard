@@ -1,0 +1,7 @@
+tableType = COLUMNSTORE;
+columns = [
+  {name = "CUSTOMER_ID"; sqlType = NVARCHAR; length = 10; notNull = true;},
+  {name = "CUSTOMER_NAME"; sqlType = NVARCHAR; length = 100; notNull = true;},
+  {name = "REGION_ID"; sqlType = INTEGER;}
+];
+primaryKey = ["CUSTOMER_ID"];

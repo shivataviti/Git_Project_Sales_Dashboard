@@ -1,0 +1,7 @@
+tableType = COLUMNSTORE;
+columns = [
+  {name = "PRODUCT_ID"; sqlType = NVARCHAR; length = 10; notNull = true;},
+  {name = "PRODUCT_NAME"; sqlType = NVARCHAR; length = 100;},
+  {name = "PRICE"; sqlType = DECIMAL; precision = 10; scale = 2;}
+];
+primaryKey = ["PRODUCT_ID"];

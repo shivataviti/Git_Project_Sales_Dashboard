@@ -1,0 +1,6 @@
+tableType = COLUMNSTORE;
+columns = [
+  {name = "REGION_ID"; sqlType = INTEGER; notNull = true;},
+  {name = "REGION_NAME"; sqlType = NVARCHAR; length = 100;}
+];
+primaryKey = ["REGION_ID"];

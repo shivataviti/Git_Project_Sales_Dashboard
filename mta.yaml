@@ -1,0 +1,18 @@
+ID: salesproject
+_schema-version: '3.1'
+version: 0.0.1
+
+modules:
+  - name: salesproject-db
+    type: hdb
+    path: db
+    parameters:
+      memory: 256M
+    requires:
+      - name: salesproject-db-hdi-container
+
+resources:
+  - name: salesproject-db-hdi-container
+    type: com.sap.xs.hdi-container
+    properties:
+      hdi-container-name: ${service-name}
